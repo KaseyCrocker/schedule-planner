@@ -53,4 +53,9 @@ $(document).ready(function () {
     }
 
     timeTracker();
+
+    setInterval(function() {
+        timeTracker();
+    }, (1000 * 60) * 5);
 });
+
